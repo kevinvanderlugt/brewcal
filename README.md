@@ -15,7 +15,8 @@ This project is my proposed project for the [CodeFellows](http://www.codefellows
 
 ### Initial Design Mockup
 Below is an initial sample of the design mockup, not sure if this belongs in the README.   This was a good place to show the instructors what my thoughts are.
-![Mockup](https://github.com/kevinvanderlugt/brewcal/blob/master/brewcal_mockup.png "Mockup")
+
+![](https://raw.github.com/kevinvanderlugt/brewcal/master/resources/brewcal_mockup.png)
 
 Features added will be tracked in the [issue tracker](https://github.com/kevinvanderlugt/brewcal/issues)
 
