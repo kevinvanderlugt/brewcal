@@ -13,6 +13,10 @@ TODO
 ----
 This project is my proposed project for the [CodeFellows](http://www.codefellows.org) evening rails workshop. Since I am adding features and working over the next 8 weeks, it will be in a constant state of flux.
 
+### Initial Design Mockup
+Below is an initial sample of the design mockup, not sure if this belongs in the README.   This was a good place to show the instructors what my thoughts are.
+![Mockup](https://github.com/kevinvanderlugt/brewcal/blob/master/brewcal_mockup.png "Mockup")
+
 Features added will be tracked in the [issue tracker](https://github.com/kevinvanderlugt/brewcal/issues)
 
 Features
