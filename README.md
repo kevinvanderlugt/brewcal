@@ -9,6 +9,12 @@ I have been looking for a good brewing calendar for a while to plan/track my hom
 
 Each calendar board will have a public url which can be sent to friends to share whats on tap or whats conditioning in bottles.
 
+TODO
+----
+This project is my proposed project for the [CodeFellows](http://www.codefellows.org) evening rails workshop. Since I am adding features and working over the next 8 weeks, it will be in a constant state of flux.
+
+Features added will be tracked in the [issue tracker](https://github.com/kevinvanderlugt/brewcal/issues)
+
 Features
 --------
 * User authentication
