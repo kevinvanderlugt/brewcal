@@ -44,9 +44,16 @@ Would like to have:
 
 Contributing
 ------------
-Want to help contribute?  Awesome!i
+Want to help contribute?  Awesome!
 
 Send me a pull request and we can chat about it.
+
+### Getting started
+TODO - Since I haven't build the project yet, not sure yet the starting steps.
+
+### Bonus points
+* Every feature added should have tests
+* Each pull request should pass all tests
 
 Credits
 -------
