@@ -15,7 +15,6 @@ html, body {
   border: 0;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 46px;
 }
 
 body {
@@ -116,7 +115,7 @@ input.search {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -92px; /* the bottom margin is the negative value of the footer's height */
+  margin: 46px auto -46px; /* the bottom margin is the negative value of the footer's height */
 }
 footer {
   background-color: #1D3042;
