@@ -51,7 +51,7 @@ header {
 
 .header-title {
   padding-left: 10%;
-  line-height: 44px;
+  line-height: 46px;
   font-size: 19px;
 }
 
@@ -59,7 +59,7 @@ header ul {
   list-style: none;
   float: right;
   padding-right: 10%;
-  line-height: 22px;
+  line-height: 46px;
 }
 
 header li {
