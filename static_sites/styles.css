@@ -94,14 +94,18 @@ section.dashboard {
   border: 2px solid #C9C9C9;
 }
 
-/* header stuff */
-header {
+header, footer {
   background-color: #1D3042;
   height: 46px;
-  position: fixed;
-  top: 0;
+
+  position:fixed;
   width: 100%;
   left: 0;
+}
+
+/* header stuff */
+header {
+  top: 0;
 }
 
 .header-title {
@@ -110,7 +114,7 @@ header {
   font-size: 19px;
 }
 
-header ul {
+header ul, footer ul {
   list-style: none;
   float: right;
   padding-right: 10%;
@@ -118,29 +122,16 @@ header ul {
   margin-top: 0;
 }
 
-header li {
+header li, footer li {
   display: inline;
   padding-right: 20px;
 }
 
 /* footer stuff */
 footer {
-  position:fixed;
   bottom:0;
-  width: 100%;
-  background-color: #1D3042;
-  height: 46px;
 }
-footer ul {
-  float: right;
-  text-align: center;
-  margin-right: 10%;
-  margin-bottom: 0;
-}
-footer li {
-  display: inline;
-  padding-right: 20px;
-}
+
 #copyright {
   text-align: center;
   display: inline;
