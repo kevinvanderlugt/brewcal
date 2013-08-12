@@ -7,26 +7,6 @@ html, body {
   font-family: 'Raleway', sans-serif;
 }
 
-#container {
-/*position: absolute;
-  top: 46px;
-  padding-left: 10%;
-  padding-right: 10%;*/
-/*  left: 10;
-  right: 10;*/
- /* position: relative;
-
-  margin: 0 auto;*/
-
-  /*Subtract out the header and footer*/
-  /*height: calc(100% - 92px);*/
-
-  margin-left: 10%;
-  margin-right: 10%; 
-  overflow: auto; 
-  padding: 46px 0; 
-}
-
 body {
   background-color: #E3E3E3;
 }
@@ -48,32 +28,12 @@ a:active {
   color: #EBEBEB;
 }
 
-header {
-  background-color: #1D3042;
-  height: 46px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  left: 0;
-}
-
-.header-title {
-  padding-left: 10%;
-  line-height: 46px;
-  font-size: 19px;
-}
-
-header ul {
-  list-style: none;
-  float: right;
-  padding-right: 10%;
-  line-height: 46px;
-  margin-top: 0;
-}
-
-header li {
-  display: inline;
-  padding-right: 20px;
+/* main container for the dashboard */
+#container {
+  margin-left: 10%;
+  margin-right: 10%; 
+  overflow: auto; 
+  padding: 46px 0; 
 }
 
 /* section for the controls such as add and search */
@@ -118,6 +78,48 @@ input.search {
   color: #ffffff;
 }
 
+/* Dashboard stuff */
+section.dashboard {
+  margin: 0;
+  padding: 3px;
+  margin-bottom: 10px;
+  background-color: #F7F7F7;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  border: 3px solid #C9C9C9;
+}
+
+/* header stuff */
+header {
+  background-color: #1D3042;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.header-title {
+  padding-left: 10%;
+  line-height: 46px;
+  font-size: 19px;
+}
+
+header ul {
+  list-style: none;
+  float: right;
+  padding-right: 10%;
+  line-height: 46px;
+  margin-top: 0;
+}
+
+header li {
+  display: inline;
+  padding-right: 20px;
+}
 
 /* footer stuff */
 footer {
@@ -125,7 +127,7 @@ footer {
   bottom:0;
   width: 100%;
   background-color: #1D3042;
-  height: 46px; /* .push must be the same height as .footer */
+  height: 46px;
 }
 footer ul {
   float: right;
@@ -144,14 +146,4 @@ footer li {
   font-size: 10px;
   line-height: 46px;
   padding-left: 10%;
-}
-
-
-
-/* Dashboard stuff */
-section.dashboard {
-  margin: 0;
-  height: 1200px;
-  width: 100%;
-  background-color: lightblue;
 }
