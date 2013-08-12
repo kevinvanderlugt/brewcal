@@ -7,6 +7,7 @@
 }
 html, body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 #container {
@@ -111,7 +112,6 @@ input.search {
 
 
 /* footer stuff */
-
 #container {
   min-height: 100%;
   height: auto !important;
@@ -131,4 +131,10 @@ footer ul {
 footer li {
   display: inline;
   padding-right: 20px;
+}
+
+/* Dashboard stuff */
+section.dashboard {
+  height: 100%;
+  background-color: lightblue;
 }
