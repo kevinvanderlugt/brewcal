@@ -1,0 +1,93 @@
+!!!
+%html
+  %head
+    %title brewcal
+    %link{ href: "styles.css", rel: "stylesheet", type: "text/css" }
+    %link{ href: "normalize.css", rel: "stylesheet", type: "text/css" }
+    %link{ href: "simplegrid.css", rel: "stylesheet", type: "text/css" }
+    %link{ href: "http://fonts.googleapis.com/css?family=Raleway:300", rel: "stylesheet", type: "text/css" }
+  %body
+    %header
+      %nav
+        %a.header-title{href: "#"} Kevin's Brewing Calendar
+        %ul
+          %li
+            %a{href: "/home.html"} Home
+          %li
+            %a{href: "#"} Account
+    .container
+      %section.controls
+        %a.create{href: "#addModal"} Add Brew
+        %input.search{placeholder: "Search"}
+      %section.dashboard
+        %section.grid.dashboard-header
+          .col-1-5 Planning
+          .col-1-5 Brewing
+          .col-1-5 Fermenting
+          .col-1-5 Conditioning
+        %section.grid.dashboard-body
+          .col-1-5
+            %section.card
+              %span.title Apollo Single Hop IPA
+              %br
+              %a{href: "#recipe"} Recipe
+              %span.original-gravity OG: 1.070
+              %span.final-gravity FG: 1.015
+              %span.brewdate to brew: 04-25-2013
+            %section.card
+              %span.title Apollo Single Hop IPA
+              %br
+              %a{href: "#recipe"} Recipe
+              %span.original-gravity OG: 1.070
+              %span.final-gravity FG: 1.015
+              %span.brewdate to brew: 04-25-2013
+            %section.card
+              %span.title Apollo Single Hop IPA
+              %br
+              %a{href: "#recipe"} Recipe
+              %span.original-gravity OG: 1.070
+              %span.final-gravity FG: 1.015
+              %span.brewdate to brew: 04-25-2013
+            %section.card
+              %span.title Apollo Single Hop IPA
+              %br
+              %a{href: "#recipe"} Recipe
+              %span.original-gravity OG: 1.070
+              %span.final-gravity FG: 1.015
+              %span.brewdate to brew: 04-25-2013
+          .col-1-5
+            %section.card
+              %span.title American Summer Session Ale
+              %br
+              %a{href: "#recipe"} Recipe
+              %span.original-gravity OG: 1.040
+              %span.final-gravity FG: 1.010
+              %span.brewdate to brew: 04-25-2013
+          .col-1-5
+            %section.card
+              %span.title SMaSH ESB
+              %br
+              %a{href: "#recipe"} Recipe
+              %span.original-gravity OG: 1.050
+              %span.final-gravity FG: 1.015
+              %span.brewdate brewed on: 04-25-2013
+          .col-1-5
+          .col-1-5
+            %section.card
+              %span.title Kevin's Hefe
+              %br
+              %a{href: "#recipe"} Recipe
+              %span.original-gravity OG: 1.052
+              %span.final-gravity FG: 1.015
+              %span.brewdate brewed on: 04-25-2013
+    %footer
+      #copyright &copy; 2013 Kevin VanderLugt
+      %ul
+        %li
+          %a{href: "/home.html"} Home
+        %li
+          %a{href: "#"} About
+        %li
+          %a{href: "#"} FAQ
+        %li
+          %a{href: "#"} Privacy
