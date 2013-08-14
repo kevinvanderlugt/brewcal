@@ -4,6 +4,7 @@
 
 html, body {
   height: 100%;
+  max-width: 1370px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -79,7 +80,6 @@ input.search {
 
 /* Dashboard stuff */
 .dashboard {
-  margin: 0;
   margin-bottom: 10px;
   background-color: #F7F7F7;
 
@@ -88,9 +88,15 @@ input.search {
   border-radius: 6px;
 
   border: 2px solid #C9C9C9;
+
+  height: -moz-calc(100% - 66px);
+  height: -webkit-calc(100% - 66px);
+  height: calc(100% - 66px);
 }
 
 .dashboard-header {
+  height: 35px;
+
   border-bottom: 2px solid #C9C9C9;
   line-height: 22px;
   
@@ -99,10 +105,21 @@ input.search {
   font-weight: bold;
 }
 
+.dashboard-body {
+  height: -moz-calc(100% - 35px);
+  height: -webkit-calc(100% - 35px);
+  height: calc(100% - 35px);
+}
+
 .grid {
   text-align: center;
 }
 
+.col-1-5 {
+  height: 100%;
+}
+
+/* Select all column grids to add the borders */
 [class*='col-']
 {
   border-right: 2px solid #C9C9C9;
@@ -120,6 +137,9 @@ header, footer {
   position:fixed;
   width: 100%;
   left: 0;
+
+  /*Position the headers and footer to always be on top*/
+  z-index: 999;
 }
 
 div.column {
@@ -164,15 +184,10 @@ footer {
   padding-left: 10%;
 }
 
-/*This stuff is still not working as expected*/
 .container {
-  height: auto !important;  /*ie6 ignores !important, so this will be overridden below */
-  min-height: 100%; /* ie6 ignores min-height completely */
+  height: 100% !important;
+  min-height: 100%; 
 } 
-
-/*.col-1-5 {
-  height: 100%;
-}*/
 
 .card {
   margin: 5px;
@@ -183,7 +198,7 @@ footer {
   -moz-border-radius: 6px;
   border-radius: 6px;
 
-  height: 100px;
+  height: 120px;
   position: relative;
 
   padding: 3px;
