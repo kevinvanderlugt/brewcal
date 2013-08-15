@@ -59,16 +59,10 @@ input.search {
   line-height: 56px;
   padding: 12px 18px 13px;
 
-  border: none;
   color: #ffffff;
-  text-decoration: none;
-  text-shadow: none;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
 }
 .create:hover {
   background-color: #1AC4A3;
@@ -137,10 +131,6 @@ header, footer {
 
   /*Position the headers and footer to always be on top*/
   z-index: 999;
-}
-
-div.column {
-  display: inline;
 }
 
 /* header stuff */
