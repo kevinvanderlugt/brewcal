@@ -24,8 +24,8 @@ a:hover {
 
 /* main container for the dashboard */
 .container {
-  margin-left: 10%;
-  margin-right: 10%; 
+  padding-left: 10%;
+  padding-right: 10%; 
   overflow: auto; 
   padding: 46px 0; 
 }
