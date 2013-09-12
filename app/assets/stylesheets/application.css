@@ -11,3 +11,64 @@
  *= require_self
  *= require_tree .
  */
+
+html, body {
+  height: 100%;
+  max-width: 1370px;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #E3E3E3;
+}
+
+header, footer {
+  background-color: #1D3042;
+  height: 46px;
+
+  position:fixed;
+  width: 100%;
+  left: 0;
+
+  /*Position the headers and footer to always be on top*/
+  z-index: 999;
+}
+
+/* header stuff */
+header {
+  top: 0;
+}
+
+.header-title {
+  padding-left: 10%;
+  line-height: 46px;
+  font-size: 19px;
+}
+
+header ul, footer ul {
+  list-style: none;
+  float: right;
+  padding-right: 10%;
+  line-height: 46px;
+  margin-top: 0;
+}
+
+header li, footer li {
+  display: inline;
+  padding-right: 20px;
+}
+
+
+/* All default links on the page */
+a {
+  text-decoration:none;
+}
+a:link, a:active {
+  color: #EBEBEB;
+}
+a:visited {
+  color: #D9D9D9;
+}
+a:hover {
+  color: #C4C4C4;
+}
