@@ -11,10 +11,11 @@
 <body>
   <header>
     <nav>
-      <%= link_to "Kevin's Brewing Calendar", root_path, class: "header-title" %>
+      <%# This should render the users name %>
+      <%= link_to "brewcal", root_path, class: "header-title" %>
       <ul>
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Sign In", "#" %></li>
       </ul>
     </nav>
   </header>
