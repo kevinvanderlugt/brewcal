@@ -1,8 +1,10 @@
 Brewcal::Application.routes.draw do
-  get "/dashboard"            => "static_pages#dashboard"
-  get "/about"                => "static_pages#about"
-  get "/faq"      => "static_pages#faq"
-  get "/privacy"  => "static_pages#privacy"
+  resources :users
+  get "/signup"         => "users#new"
+  get "/dashboard"      => "static_pages#dashboard"
+  get "/about"          => "static_pages#about"
+  get "/faq"            => "static_pages#faq"
+  get "/privacy"        => "static_pages#privacy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
