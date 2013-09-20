@@ -29,12 +29,12 @@
   
 }
 .contributing {
-    //font-size: 10em;
-    position: relative;
+  min-height: 110px;
+  position: relative;
 
-    .fork-link img {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+  .fork-link img {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
+}
