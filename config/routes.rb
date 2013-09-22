@@ -1,6 +1,10 @@
 Brewcal::Application.routes.draw do
   resources :users
+  resources :sessions, only: [:create, :destroy]
+
   get "/signup"         => "users#new"
+  get '/signin'         => "sessions#new"
+
   get "/dashboard"      => "static_pages#dashboard"
   get "/about"          => "static_pages#about"
   get "/faq"            => "static_pages#faq"

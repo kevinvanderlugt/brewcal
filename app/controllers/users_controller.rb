@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     if @user.save
       flash[:notice] = "Welcome, thanks for signing up."
-      redirect_to root_url
+      redirect_to dashboard_url
     else
       flash.now[:alert] = "There was a problem signing up."
       render 'new'
@@ -15,11 +15,10 @@ class UsersController < ApplicationController
   end
 
   private
-  def user_params
-    params.require(:user).permit( :name,
-                                  :email,
-                                  :password,
-                                  :password_confirmation )
-                                  
-  end
+    def user_params
+      params.require(:user).permit( :name,
+                                    :email,
+                                    :password,
+                                    :password_confirmation )s            
+    end
 end
