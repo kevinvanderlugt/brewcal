@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130919054032) do
+ActiveRecord::Schema.define(version: 20130922225011) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "dashboards", force: true do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.boolean  "hidden",     default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "dashboards", ["user_id"], name: "index_dashboards_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"
