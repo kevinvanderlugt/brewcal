@@ -14,9 +14,9 @@ class DashboardsController < ApplicationController
     def set_dashboard
       # Currently the first dashboard is the default
       if current_user?
-        @dashboard = current_user.dashboards.find(1).first
+        @dashboard = current_user.dashboards.first
       else
-        redirect_to signup_url
+        redirect_to signin_url
       end
     end
 end
