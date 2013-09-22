@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  def dashboard
+  def landing
   end
 
   def about

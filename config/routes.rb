@@ -6,7 +6,7 @@ Brewcal::Application.routes.draw do
   get '/signin'         => "sessions#new"
   get '/signout'        => 'sessions#destroy'
 
-  get "/dashboard"      => "static_pages#dashboard"
+  get "/dashboard"      => "dashboards#default"
   get "/about"          => "static_pages#about"
   get "/faq"            => "static_pages#faq"
   get "/privacy"        => "static_pages#privacy"
@@ -14,7 +14,7 @@ Brewcal::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#dashboard'
+  root 'static_pages#landing'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

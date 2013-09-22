@@ -12,6 +12,6 @@ class User < ActiveRecord::Base
 
   private
     def build_dashboard
-      self.dashboards.build
+      self.dashboards.build title: "Default"
     end
 end
