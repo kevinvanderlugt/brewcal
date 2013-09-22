@@ -9,16 +9,7 @@
   <link href="normalize.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
-    <nav>
-      <%# This should render the users name %>
-      <%= link_to "brewcal", root_path, class: "header-title" %>
-      <ul>
-        <li><%= link_to "Sign In", signin_path %></li>
-        <li><%= link_to "Signup", signup_path %></li>
-      </ul>
-    </nav>
-  </header>
+  <%= render 'layouts/header' %>  
 
   <div class="container">
     <% flash.each do |key, value| %>
@@ -27,17 +18,6 @@
     <%= yield %>
   </div>
 
-  <footer>
-    <div id="copyright">
-      &copy; 2013 Kevin VanderLugt
-    </div>
-
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Faq", faq_path %></li>
-      <li><%= link_to "Privacy", privacy_path %></li>
-    </ul>
-  </footer>
+  <%= render 'layouts/footer' %>
 </body>
 </html>
