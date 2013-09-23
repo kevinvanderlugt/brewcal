@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       sign_in user
       redirect_to dashboard_url
     else
-      flash.now[:error] = "Incorrect email/password combination"
+      flash.now[:danger] = "Incorrect email/password combination"
       render 'new'
     end
   end
@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
   def destroy
     if session[:user_id].present?
       session[:user_id] = nil
-      flash[:alert] = "You have been signed out!"
+      flash[:info] = "You have been signed out!"
     end
     redirect_to dashboard_url
   end
