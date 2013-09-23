@@ -1,2 +1,9 @@
-<h1><%= @dashboard.title %></h1>
-<p>Find me in app/views/dashboards/default.html.erb</p>
+<section class="controls">
+  <%= link_to "Add Brew", "#addModal", class: "create" %>
+  <input class="search" placeholder="Search">
+</section>
+<section class="dashboard">
+  <h1><%= @dashboard.title %></h1>
+
+  This is the default dashboard
+</section>
