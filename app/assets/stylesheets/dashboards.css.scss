@@ -76,3 +76,22 @@ input.search {
   height: -webkit-calc(100% - 35px);
   height: calc(100% - 35px);
 }
+
+.grid {
+  text-align: center;
+}
+
+.col-1-5 {
+  height: 100%;
+}
+
+/* Select all column grids to add the borders */
+[class*='col-']
+{
+  border-right: 2px solid #C9C9C9;
+}
+
+[class*='col-']:last-of-type
+{
+  border-right: none;
+}
