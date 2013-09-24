@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  recipe_url: MyString
+  dashboard_id: 1
+  og: 1.5
+  fg: 1.5
+
+two:
+  title: MyString
+  description: MyText
+  recipe_url: MyString
+  dashboard_id: 1
+  og: 1.5
+  fg: 1.5
