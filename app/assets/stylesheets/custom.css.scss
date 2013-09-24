@@ -1,10 +1,11 @@
-
-//@import "bootstrap";
+@import "bootstrap";
 
 html, body {
   height: 100%;
   max-width: 1370px;
+  min-width: 995px; // Currently not supporting mobile intentionally
   font-family: 'Raleway', sans-serif;
+  font-weight: normal;
 }
 
 body {
@@ -40,6 +41,7 @@ header ul, footer ul {
   padding-right: 10%;
   line-height: 46px;
   margin-top: 0;
+  font-size: 1.25em;
 }
 
 header li, footer li {
@@ -49,17 +51,15 @@ header li, footer li {
 
 
 /* All default links on the page */
-a:link, a:active {
+a:link, a:active, a:visited {
   color: #EBEBEB;
-}
-a:visited {
-  color: #D9D9D9;
 }
 a:hover {
   color: #C4C4C4;
+  text-decoration: none;
 }
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* main container for the dashboard */
@@ -67,7 +67,7 @@ a {
   margin-left: 10%;
   margin-right: 10%; 
   overflow: auto; 
-  padding: 46px 0; 
+  padding: 56px 0; 
 
   height: 100% !important;
   min-height: 100%; 

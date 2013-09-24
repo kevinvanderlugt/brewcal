@@ -1,12 +1,15 @@
 <section class="controls">
-  <%= link_to "Add Brew", "#addModal", class: "create" %>
-  <input class="search" placeholder="Search">
-</section>
+  <%= link_to "Add Brew", "#addModal", class: "btn create" %>
+<!--   <input class="form-control search" placeholder="Search">
+ --></section>
 <section class="dashboard">
-  <h1><%= @dashboard.title %></h1>
-  <section class="grid dashboard-header">
-  <% @dashboard.brew_statuses.each do |status| %>
-    <div class="col-1-5">
+  <section class="row dashboard-header">
+  <% @dashboard.brew_statuses.each_with_index do |status, index| %>
+    <% if index == 0 %>
+    <div class="col-md-2">
+    <% else %>
+    <div class="col-md-2">
+    <% end %>
       <%= status.capitalize %>
     </div>
   <% end %>
