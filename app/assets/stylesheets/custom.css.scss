@@ -51,14 +51,14 @@ header li, footer li {
 
 
 /* All default links on the page */
-a:link, a:active, a:visited {
+nav a:link, a:active, a:visited {
   color: #EBEBEB;
 }
-a:hover {
+nav a:hover {
   color: #C4C4C4;
   text-decoration: none;
 }
-a {
+nav a {
   text-decoration: none;
 }
 
