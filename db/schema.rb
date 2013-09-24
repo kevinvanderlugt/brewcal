@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130923000942) do
+ActiveRecord::Schema.define(version: 20130924142029) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "brews", force: true do |t|
+    t.text     "description"
+    t.string   "recipe_url"
+    t.integer  "dashboard_id"
+    t.float    "og"
+    t.float    "fg"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+  end
+
+  add_index "brews", ["dashboard_id"], name: "index_brews_on_dashboard_id", using: :btree
 
   create_table "dashboards", force: true do |t|
     t.integer  "user_id"
