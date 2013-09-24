@@ -58,9 +58,9 @@ a.create:hover {
 }
 
 .dashboard-body {
-  height: -moz-calc(100% - 35px);
-  height: -webkit-calc(100% - 35px);
-  height: calc(100% - 35px);
+  height: -moz-calc(100% - 24px);
+  height: -webkit-calc(100% - 24px);
+  height: calc(100% - 24px);
 }
 
 .row {
@@ -69,13 +69,14 @@ a.create:hover {
 }
 
 /* Select all column grids to add the borders */
-[class*='span']
+[class*='col-md-']
 {
   border-right: 2px solid #C9C9C9;
   margin: 0;
+  height: 100%;
 }
 
-[class*='span']:last-of-type
+[class*='col-md-']:last-of-type
 {
   border-right: none;
 }
