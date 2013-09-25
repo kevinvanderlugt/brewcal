@@ -14,5 +14,7 @@ dashboard = user.dashboards.first
 30.times {
   dashboard.brews.create!( name: Faker::Name.name,
                           description: Faker::Lorem.sentence,
-                          recipe_url: Faker::Internet.url)
+                          recipe_url: Faker::Internet.url,
+                          og: 1.040,
+                          fg: 1.012)
 }

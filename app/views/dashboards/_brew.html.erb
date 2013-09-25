@@ -1,0 +1,12 @@
+<section class="card">
+  <span class="card-title"><%= brew.name %></span>
+  </br>
+  <%= link_to "Recipe", brew.recipe_url %>
+  <span class="original-gravity">
+    OG: <%= brew.og %>
+  </span>
+  <span class="final-gravity">
+    FG: <%= brew.fg %>
+  </span>
+  <span class="brewdate"><%= brew.recent_brew_status %></span>
+</section>
