@@ -1,12 +1,6 @@
 class DashboardsController < ApplicationController
   before_action :set_dashboard, only: :default
 
-  def index
-  end
-
-  def show
-  end
-
   def default
   end
 
