@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def landing
-    if current_user?
+    if signed_in?
       redirect_to dashboard_url
     end
   end

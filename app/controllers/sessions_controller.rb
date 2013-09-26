@@ -15,10 +15,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    if session[:user_id].present?
-      session[:user_id] = nil
-      flash[:info] = "You have been signed out!"
-    end
-    redirect_to dashboard_url
+    sign_out
   end
 end
