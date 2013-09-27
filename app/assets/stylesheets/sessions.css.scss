@@ -1,19 +1,29 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.panel {
+  margin-top: 5px;
+  padding: 0px;
+}
 
 .center {
   float: none;
   margin-left: auto;
   margin-right: auto;
+  text-align:center;
 }
 
 .panel-body {
   .field {
     padding: 5px;
   }
-  a {
+  .btn-green {
+    background-color: #1AC4A3;
+    color: #ffffff;
+  }
+  .btn-green:hover {
     background-color: #1abc9c;
+    color: #C4C4C4;
   }
 }
 
