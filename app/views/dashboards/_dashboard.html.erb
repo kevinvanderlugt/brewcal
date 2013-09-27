@@ -3,25 +3,18 @@
 <!--   <input class="form-control search" placeholder="Search">
  --></section>
 <section class="dashboard">
-  <section class="row dashboard-header">
+  <section class="row">
   <% @dashboard.brew_statuses.each do |status| %>
     <div class="col-md-3">
-      <%= status.capitalize %>
+      <section class="dashboard-header">
+        <%= status.capitalize %>
+      </section>
+      <section class="dashboard-body">
+        <% @dashboard.brews_with_status(status).each do |brew| %>
+          <%= render 'brew', brew: brew %>
+        <% end %>
+      </section>
     </div>
   <% end %>
-  </section>
-  <section class="row dashboard-body">
-    <div class="col-md-3">
-      <%# render 'brew', brew: @dashboard.brews.first %>
-    </div>
-    <div class="col-md-3">
-      This is the default dashboard
-    </div>
-    <div class="col-md-3">
-      This is the default dashboard
-    </div>
-    <div class="col-md-3">
-      This is the default dashboard
-    </div>
   </section>
 </section>

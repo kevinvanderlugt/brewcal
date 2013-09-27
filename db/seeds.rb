@@ -11,7 +11,7 @@ user = User.create!(name: "Example User",
                     password: "foobar",
                     password_confirmation: "foobar")
 dashboard = user.dashboards.first
-30.times {
+10.times {
   dashboard.brews.create!( name: Faker::Name.name,
                           description: Faker::Lorem.sentence,
                           recipe_url: Faker::Internet.url,

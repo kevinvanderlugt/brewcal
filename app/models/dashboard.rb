@@ -6,7 +6,7 @@ class Dashboard < ActiveRecord::Base
     %i(planning fermenting conditioning on-tap)
   end
 
-  def can_add_brews?
-    true
+  def brews_with_status(status)
+    brews.where(status: status)
   end
 end
