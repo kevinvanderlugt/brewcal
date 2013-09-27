@@ -9,6 +9,7 @@ class DashboardsController < ApplicationController
       # Currently the first dashboard is the default
       if signed_in?
         @dashboard = current_user.dashboards.first
+        @brew = Brew.new
       else
         redirect_to signin_url
       end

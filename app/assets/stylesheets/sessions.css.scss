@@ -12,4 +12,16 @@
   .field {
     padding: 5px;
   }
+  a {
+    background-color: #1abc9c;
+  }
+}
+
+.panel-footer {
+  a {
+    color: blue;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }

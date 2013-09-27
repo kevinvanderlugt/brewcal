@@ -5,4 +5,8 @@ class Dashboard < ActiveRecord::Base
   def brew_statuses
     %i(planning fermenting conditioning on-tap)
   end
+
+  def can_add_brews?
+    true
+  end
 end

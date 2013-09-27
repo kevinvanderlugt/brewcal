@@ -1,0 +1,27 @@
+<section class="controls">
+  <%= link_to "Add Brew", "#create", { class: "btn create", data: { toggle:"modal" }} %>
+<!--   <input class="form-control search" placeholder="Search">
+ --></section>
+<section class="dashboard">
+  <section class="row dashboard-header">
+  <% @dashboard.brew_statuses.each do |status| %>
+    <div class="col-md-3">
+      <%= status.capitalize %>
+    </div>
+  <% end %>
+  </section>
+  <section class="row dashboard-body">
+    <div class="col-md-3">
+      <%# render 'brew', brew: @dashboard.brews.first %>
+    </div>
+    <div class="col-md-3">
+      This is the default dashboard
+    </div>
+    <div class="col-md-3">
+      This is the default dashboard
+    </div>
+    <div class="col-md-3">
+      This is the default dashboard
+    </div>
+  </section>
+</section>
