@@ -9,10 +9,10 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     if @user.save
       sign_in @user
-      flash[:notice] = "Welcome, thanks for signing up."
+      flash[:success] = "Welcome, thanks for signing up."
       redirect_to dashboard_url
     else
-      flash.now[:alert] = "There was a problem signing up."
+      flash.now[:danger] = "There was a problem signing up."
       render 'new'
     end
   end

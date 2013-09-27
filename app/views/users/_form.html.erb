@@ -1,21 +1,27 @@
-<%= form_for @user do |f| %>
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+<div class="panel panel-default col-md-4 center">
+  <div class="panel-heading">Sign Up</div>
+  <div class="panel-body">
+    <%= form_for @user do |f| %>
+      <%= render 'errors', obj: @user %>
+      <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+      <div class="field">
+        <%= f.label :email %>
+        <%= f.text_field :email, class: "form-control" %>
+      </div>
+      <div class="field">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: "form-control" %>
+      </div>
+      <div class="field">
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, class: "form-control" %>
+      </div>
+      <div class="field">
+        <%= f.submit submit_label, class: "btn btn-green center" %>
+      </div>
+    <% end %>
   </div>
-  <div>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
-  <div>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
-  <div>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div>
-    <%= f.submit submit_label %>
-  </div>
-<% end %>
+</div>
