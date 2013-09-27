@@ -16,5 +16,6 @@ dashboard = user.dashboards.first
                           description: Faker::Lorem.sentence,
                           recipe_url: Faker::Internet.url,
                           og: 1.040,
-                          fg: 1.012)
+                          fg: 1.012,
+                          status: dashboard.brew_statuses.sample)
 }
