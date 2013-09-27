@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   before_create :build_dashboard
 
   def email=(value)
-    value = value.strip.downcase
+    value = value.strip.downcase if value.present?
     write_attribute :email, value
   end  
 
