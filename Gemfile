@@ -38,6 +38,12 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+group :development, :test do
+  gem 'minitest-rails', git:
+'https://github.com/blowmage/minitest-rails.git'
+  gem 'guard-minitest'
+end
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
