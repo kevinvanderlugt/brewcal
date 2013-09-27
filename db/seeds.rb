@@ -12,10 +12,11 @@ user = User.create!(name: "Example User",
                     password_confirmation: "foobar")
 dashboard = user.dashboards.first
 10.times {
-  dashboard.brews.create!( name: Faker::Name.name,
+  brew = dashboard.brews.new( name: Faker::Name.name,
                           description: Faker::Lorem.sentence,
                           recipe_url: Faker::Internet.url,
                           og: 1.040,
-                          fg: 1.012,
-                          status: dashboard.brew_statuses.sample)
+                          fg: 1.012)
+  brew.status=dashboard.brew_statuses.sample.to_s
+  brew.save
 }
