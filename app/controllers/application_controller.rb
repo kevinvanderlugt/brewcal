@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
         session[:user_id] = nil
         flash[:info] = "You have been signed out!"
       end
-      redirect_to dashboard_url
+      redirect_to calendar_url
     end
 
     def current_user

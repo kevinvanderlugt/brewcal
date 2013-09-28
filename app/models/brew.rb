@@ -1,7 +1,7 @@
 class Brew < ActiveRecord::Base
   after_initialize :init
 
-  belongs_to :dashboard
+  belongs_to :calendar
   validates_presence_of :name
 
   def status=(value)

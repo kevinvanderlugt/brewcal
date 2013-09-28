@@ -10,13 +10,13 @@ user = User.create!(name: "Example User",
                     email: "example@brewcal.com",
                     password: "foobar",
                     password_confirmation: "foobar")
-dashboard = user.dashboards.first
+calendar = user.calendars.first
 10.times {
-  brew = dashboard.brews.new( name: Faker::Name.name,
+  brew = calendar.brews.new( name: Faker::Name.name,
                           description: Faker::Lorem.sentence,
                           recipe_url: Faker::Internet.url,
                           og: 1.040,
                           fg: 1.012)
-  brew.status=dashboard.brew_statuses.sample.to_s
+  brew.status=calendar.brew_statuses.sample.to_s
   brew.save
 }

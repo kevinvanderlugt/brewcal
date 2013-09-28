@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
   def landing
     if signed_in?
-      redirect_to dashboard_url
+      redirect_to calendar_url
     end
   end
 

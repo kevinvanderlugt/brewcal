@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "Welcome, thanks for signing up."
-      redirect_to dashboard_url
+      redirect_to calendar_url
     else
       flash.now[:danger] = "There was a problem signing up."
       render 'new'

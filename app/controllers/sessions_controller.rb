@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       flash[:success] = "You have signed in"
       sign_in user
-      redirect_to dashboard_url
+      redirect_to calendar_url
     else
       flash.now[:danger] = "Incorrect email/password combination"
       render 'new'

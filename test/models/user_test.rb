@@ -30,12 +30,12 @@ class UserTest < ActiveSupport::TestCase
     refute dup_user.valid?, "User should be invalid with a duplicate email"
   end
 
-  def test_user_default_dashboard
-    assert @user.respond_to? dashboards
+  def test_user_default_calendar
+    assert @user.respond_to? calendars
 
-    default_dashboard = @user.dashboards.first
-    assert_not_nil default_dashboard
-    assert_equal "Default", default_dashboard.title
+    default_calendar = @user.calendars.first
+    assert_not_nil default_calendar
+    assert_equal "Default", default_calendar.title
   end
 
   private

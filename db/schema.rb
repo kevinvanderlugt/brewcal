@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130927175333) do
+ActiveRecord::Schema.define(version: 20130928174444) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20130927175333) do
   create_table "brews", force: true do |t|
     t.text     "description"
     t.string   "recipe_url"
-    t.integer  "dashboard_id"
+    t.integer  "calendar_id"
     t.float    "og"
     t.float    "fg"
     t.datetime "created_at"
@@ -31,10 +31,10 @@ ActiveRecord::Schema.define(version: 20130927175333) do
     t.date     "tapped_on"
   end
 
-  add_index "brews", ["dashboard_id"], name: "index_brews_on_dashboard_id", using: :btree
+  add_index "brews", ["calendar_id"], name: "index_brews_on_calendar_id", using: :btree
   add_index "brews", ["status"], name: "index_brews_on_status", using: :btree
 
-  create_table "dashboards", force: true do |t|
+  create_table "calendars", force: true do |t|
     t.integer  "user_id"
     t.string   "title"
     t.boolean  "hidden",     default: false
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20130927175333) do
     t.datetime "updated_at"
   end
 
-  add_index "dashboards", ["user_id"], name: "index_dashboards_on_user_id", using: :btree
+  add_index "calendars", ["user_id"], name: "index_calendars_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"

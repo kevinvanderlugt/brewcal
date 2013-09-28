@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
   validates :email, uniqueness: true
   has_secure_password
 
-  has_many :dashboards, dependent: :destroy
-  before_create :build_dashboard
+  has_many :calendars, dependent: :destroy
+  before_create :build_calendar
 
   def email=(value)
     value = value.strip.downcase if value.present?
@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   end  
 
   private
-    def build_dashboard
-      self.dashboards.build title: "Default"
+    def build_calendar
+      self.calendars.build title: "Default"
     end
 end

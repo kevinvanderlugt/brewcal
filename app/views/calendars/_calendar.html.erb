@@ -2,15 +2,15 @@
   <%= link_to "Add Brew", "#create", { class: "btn create", data: { toggle:"modal" }} %>
 <!--   <input class="form-control search" placeholder="Search">
  --></section>
-<section class="dashboard">
+<section class="calendar">
   <section class="row">
-  <% @dashboard.brew_statuses.each do |status| %>
+  <% @calendar.brew_statuses.each do |status| %>
     <div class="col-md-3">
-      <section class="dashboard-header">
+      <section class="calendar-header">
         <%= status.capitalize %>
       </section>
-      <section class="dashboard-body">
-        <% @dashboard.brews_with_status(status).each do |brew| %>
+      <section class="calendar-body">
+        <% @calendar.brews_with_status(status).each do |brew| %>
           <%= render 'brew', brew: brew %>
         <% end %>
       </section>

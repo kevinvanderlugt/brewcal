@@ -38,7 +38,7 @@ v1.0.0 should include the following:
 * Users can share their swimlane calendar
 * Fixed swimlanes (Planning, Brewing, Fermenting, Conditioning, On Tap)
 * Each brew will keep a date of when it was transferred to a new stage
-* Old cards can be removed or hidden from the calendar dashboard
+* Old cards can be removed or hidden from the calendar
 
 Would like to have:
 * Shared brewing calendars between multiple users

@@ -1,4 +1,4 @@
-class Dashboard < ActiveRecord::Base
+class Calendar < ActiveRecord::Base
   belongs_to :user
   has_many :brews, dependent: :destroy
 

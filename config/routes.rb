@@ -7,7 +7,7 @@ Brewcal::Application.routes.draw do
   get '/signin'         => "sessions#new"
   get '/signout'        => 'sessions#destroy'
 
-  get "/dashboard"      => "dashboards#default"
+  get "/calendar"      => "calendars#default"
   get "/about"          => "static_pages#about"
   get "/faq"            => "static_pages#faq"
   get "/privacy"        => "static_pages#privacy"

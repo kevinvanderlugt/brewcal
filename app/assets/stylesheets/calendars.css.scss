@@ -1,4 +1,4 @@
-// Place all the styles related to the dashboards controller here.
+// Place all the styles related to the calendars controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -32,8 +32,8 @@ a.create:hover {
   color: #C4C4C4;
 }
 
-/* Dashboard stuff */
-.dashboard {
+/* calendar stuff */
+.calendar {
   margin-bottom: 10px;
   background-color: #F7F7F7;
 
@@ -64,10 +64,12 @@ a.create:hover {
 
   .row {
     height: 100%;
+    text-align: center;
+    margin: 0;
   }
 }
 
-.dashboard-header {
+.calendar-header {
   border-bottom: 2px solid #C9C9C9;
   line-height: 22px;
   
@@ -76,15 +78,10 @@ a.create:hover {
   font-weight: bold;
 }
 
-.dashboard-body {
+.calendar-body {
   height: -moz-calc(100% - 24px);
   height: -webkit-calc(100% - 24px);
   height: calc(100% - 24px);
-}
-
-.row {
-  text-align: center;
-  margin: 0;
 }
 
 /* Modal CSS styling */
