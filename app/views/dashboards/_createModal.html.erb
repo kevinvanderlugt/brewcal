@@ -21,6 +21,10 @@
             <%= f.text_area :description, class: "form-control" %>
           </div>
           <div class="field">
+            <%= f.label :planned_date %>
+            <%= f.date_field :planned_date, class: "form-control" %>
+          </div>
+          <div class="field">
             <%= f.label :recipe_url %>
             <%= f.text_field :recipe_url, class: "form-control" %>
           </div>

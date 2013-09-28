@@ -31,10 +31,6 @@ class Brew < ActiveRecord::Base
   end
 
   private
-    def set_field_today(date_field)
-      date_field = Date.today
-    end
-
     def init
       self.status ||= "planning"
       self.planned_date ||= Date.today
