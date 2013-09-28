@@ -1,7 +1,11 @@
 <section class="card">
-  <span class="card-title"><%= brew.name %></span>
-  </br>
-  <%= link_to "Recipe", brew.recipe_url %>
+  <span class="card-title"><%= brew.name %></span></br>
+  <% if brew.recipe_url.present? %>
+    <%= link_to "Recipe", brew.recipe_url %><br/>
+  <% end %>
+  <% if brew.description.present? %>
+    <p class="card-description"><%= brew.short_description %></p><br/>
+  <% end %>
   <span class="original-gravity">
     OG: <%= brew.og %>
   </span>

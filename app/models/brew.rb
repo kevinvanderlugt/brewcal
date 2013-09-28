@@ -30,6 +30,10 @@ class Brew < ActiveRecord::Base
     end
   end
 
+  def short_description
+    description.truncate(100)
+  end
+
   private
     def init
       self.status ||= "planning"
