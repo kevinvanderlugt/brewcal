@@ -1,6 +1,1 @@
-<h1>Edit your profile</h1>
-<%= render 'form', submit_label: 'Update' %>
-<%= link_to "Delete Account", user_path(current_user),
-                              class: "btn btn-danger",
-                              method: :delete,
-                              confirm: "Are you sure? All data will be permanently removed from the system." %>
+<%= render 'form', submit_label: 'Update', heading_label: "Edit Profile", show_delete: true %>

@@ -1,5 +1,5 @@
 <div class="panel panel-default col-md-4 center">
-  <div class="panel-heading">Sign Up</div>
+  <div class="panel-heading"><%= heading_label %></div>
   <div class="panel-body">
     <%= form_for @user do |f| %>
       <%= render 'errors', obj: @user %>
@@ -21,6 +21,14 @@
       </div>
       <div class="field">
         <%= f.submit submit_label, class: "btn btn-green center" %>
+      </div>
+      <div class="field">
+        <% if show_delete %>
+          <%= link_to "Delete Account", user_path(current_user),
+                              class: "btn btn-danger",
+                              method: :delete,
+                              confirm: "Are you sure? All data will be permanently removed from the system." %>
+        <% end %>
       </div>
     <% end %>
   </div>
