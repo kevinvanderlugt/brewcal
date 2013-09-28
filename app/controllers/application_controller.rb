@@ -29,4 +29,8 @@ class ApplicationController < ActionController::Base
     def current_user?(user)
       user == current_user
     end
+
+    def default_calendar
+      current_user.calendars.first if signed_in?
+    end
 end
