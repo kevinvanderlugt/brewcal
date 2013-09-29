@@ -9,4 +9,8 @@ class Calendar < ActiveRecord::Base
   def brews_with_status(status)
     brews.where(status: status)
   end
+
+  def current_users_dashboard?
+    current_user? user
+  end
 end

@@ -1,7 +1,7 @@
 <% can_edit ||= false %>
 <section class="card">
   <% if can_edit %>
-    <%= link_to content_tag(:span, "", class: "glyphicon glyphicon-edit"), "#edit", { class: "edit-link", data: { toggle:"modal" }} %> 
+    <%= link_to content_tag(:span, "", class: "glyphicon glyphicon-edit"), edit_brew_path(brew), { class: "edit-link" } %> 
   <% end %>
   <span class="card-title"><%= brew.name %></span></br>
   <% if brew.recipe_url.present? %>

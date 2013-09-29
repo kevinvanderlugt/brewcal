@@ -1,7 +1,7 @@
 Brewcal::Application.routes.draw do
   resources :users
   resources :sessions, only: [:create]
-  resources :brews, only: [:create]
+  resources :brews, only: [:create, :edit, :update]
 
   get "/signup"         => "users#new"
   get '/signin'         => "sessions#new"

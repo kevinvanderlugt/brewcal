@@ -33,10 +33,16 @@ class Brew < ActiveRecord::Base
   def short_description
     description.truncate(100)
   end
+  
+  def belongs_to_current_user?
+    self.calendar.current_users_dashboard?
+  end
 
   private
     def init
       self.status ||= "planning"
       self.planned_date ||= Date.today
     end
+
+
 end

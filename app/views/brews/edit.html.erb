@@ -1,0 +1,46 @@
+<div class="panel panel-default col-md-8 center">
+  <div class="panel-heading">Edit Brew</div>
+  <div class="panel-body text-left">
+  <%= form_for @brew do |f| %>
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label :description %>
+      <%= f.text_area :description, class: "form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label :status %>
+      <%= f.select :status, @brew.calendar.brew_statuses %>
+    </div>
+    <div class="field">
+      <%= f.label "Planned Brew Date" %>
+      <%= f.date_field :planned_date, class: "form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label "Brewed On Date" %>
+      <%= f.date_field :brewed_on, class: "form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label "Tapped On Date" %>
+      <%= f.date_field :tapped_on, class: "form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label :recipe_url %>
+      <%= f.text_field :recipe_url, class: "form-control" %>
+    </div>
+    <div class="field">
+      <div class="gravities">
+        <%= f.label :og %>
+        <%= f.number_field :og, class: "form-control", min: 0.0, max: 2.0, step: 0.001, value: "1.000" %> 
+        <%= f.label :fg %>
+        <%= f.number_field :fg, class: "form-control", min: 0.0, max: 2.0, step: 0.001, value: "1.000" %>          
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <%= f.button :submit, :class => 'btn btn-primary' %>
+  </div> 
+  <% end %>  
+</div>
