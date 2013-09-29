@@ -1,5 +1,5 @@
 class BrewsController < ApplicationController
-  before_action :can_edit_brew, only: [:edit]
+  before_action :can_edit_brew, only: [:edit, :update]
 
   def create
     @brew = default_calendar.brews.build(brew_params)
@@ -15,7 +15,13 @@ class BrewsController < ApplicationController
   end
 
   def update
-
+    if @brew.update_attributes(brew_params)
+      flash[:success] = "Brew update successfully"
+      redirect_to root_url
+    else
+      flash.now[:danger] = "Unable to update brew"
+      render 'edit'
+    end
   end
 
   private
