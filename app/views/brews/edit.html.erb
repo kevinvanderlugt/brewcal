@@ -11,8 +11,8 @@
       <%= f.text_area :description, class: "form-control" %>
     </div>
     <div class="field">
-      <%= f.label :status %>
-      <%= f.select :status, @brew.calendar.brew_statuses %>
+      <%= f.label :status %><br/>
+      <%= f.select :status, @brew.calendar.brew_statuses, class: "selectpicker" %>
     </div>
     <div class="field">
       <%= f.label "Planned Brew Date" %>
@@ -40,7 +40,11 @@
     </div>
   </div>
   <div class="panel-footer">
-    <%= f.button :submit, :class => 'btn btn-primary' %>
+    <%= link_to "delete", user_path(current_user),
+                        class: "btn btn-danger delete",
+                        method: :delete,
+                        confirm: "Are you sure? All data will be permanently removed from the system." %>
+    <%= f.button :submit, :class => 'btn btn-primary submit' %>
   </div> 
   <% end %>  
 </div>
