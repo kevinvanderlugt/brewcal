@@ -11,10 +11,10 @@
     <p class="card-description"><%= brew.short_description %></p><br/>
   <% end %>
   <span class="original-gravity">
-    OG: <%= brew.og %>
+    OG: <%= number_with_precision brew.og, precision: 3 %>
   </span>
   <span class="final-gravity">
-    FG: <%= brew.fg %>
+    FG: <%= number_with_precision brew.fg, precision: 3 %>
   </span>
   <span class="brewdate"><%= brew.recent_brew_status %></span>
 </section>
