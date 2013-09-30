@@ -1,5 +1,5 @@
 class BrewsController < ApplicationController
-  before_action :can_edit_brew, only: [:edit, :update]
+  before_action :can_edit_brew, only: [:edit, :update, :destroy]
 
   def create
     @brew = default_calendar.brews.build(brew_params)
@@ -22,6 +22,14 @@ class BrewsController < ApplicationController
       flash.now[:danger] = "Unable to update brew"
       render 'edit'
     end
+  end
+
+  def destroy
+    unless @brew.update_attributes(hidden: true)
+      flash.now[:danger] = "Unable to delete brew"
+      render 'edit'
+    end
+    redirect_to root_url
   end
 
   private

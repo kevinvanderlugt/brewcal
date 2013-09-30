@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130928174444) do
+ActiveRecord::Schema.define(version: 20130930031434) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20130928174444) do
     t.date     "planned_date"
     t.date     "brewed_on"
     t.date     "tapped_on"
+    t.boolean  "hidden",       default: false
   end
 
   add_index "brews", ["calendar_id"], name: "index_brews_on_calendar_id", using: :btree

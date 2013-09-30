@@ -40,10 +40,10 @@
     </div>
   </div>
   <div class="panel-footer">
-    <%= link_to "delete", user_path(current_user),
+    <%= link_to "delete", brew_path(@brew),
                         class: "btn btn-danger delete",
                         method: :delete,
-                        confirm: "Are you sure? All data will be permanently removed from the system." %>
+                        confirm: "Are you sure?" %>
     <%= f.button :submit, :class => 'btn btn-primary submit' %>
   </div> 
   <% end %>  

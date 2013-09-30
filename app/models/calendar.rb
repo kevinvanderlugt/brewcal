@@ -7,7 +7,7 @@ class Calendar < ActiveRecord::Base
   end
 
   def brews_with_status(status)
-    brews.where(status: status)
+    brews.where(hidden: false).where(status: status)
   end
 
   def current_users_dashboard?
