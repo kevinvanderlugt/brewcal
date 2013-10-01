@@ -11,16 +11,6 @@ section.controls {
 input.search {
   float: right;
   display: inline;
-/*  font-size: 16px;
-  padding: 10px 18px 10px;
-  margin-top: 6px;
-
-  border: 2px solid #C9C9C9;
-
-  text-decoration: none;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;*/
 }
 
 a.create {
@@ -42,10 +32,18 @@ a.create:hover {
   border-radius: 6px;
 
   border: 2px solid #C9C9C9;
-
+/*
   height: -moz-calc(100% - 48px);
   height: -webkit-calc(100% - 48px);
-  height: calc(100% - 48px);
+  height: calc(100% - 48px);*/
+
+  height: 100%;
+
+  /*Using min-height causes the columns not to be full height*/
+  min-height: -moz-calc(100% - 48px);
+  min-height: -webkit-calc(100% - 48px);
+  min-height: calc(100% - 48px);
+  
 
     /* Select all column grids to add the borders */
   [class*='col-md-']
@@ -53,6 +51,10 @@ a.create:hover {
     border-right: 2px solid #C9C9C9;
     margin: 0;
     height: 100%;
+    /*
+    min-height: -moz-calc(100% - 24px);
+    min-height: -webkit-calc(100% - 24px);
+    min-height: calc(100% - 24px);*/
 
     padding: 0px;
   }
